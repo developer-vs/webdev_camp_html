@@ -17,41 +17,42 @@
 	<br>
 	<section>
 		<h1>Sign Up For a Class Today</h1>		
-		<form method="GET">
-			<br>
-			<h3><u>Basic Info</u></h3>
-			First Name *<br>
-			<input type="text" name="firstname" required><br><br>
-			Last Name *<br>
-			<input type="text" name="lastname" required><br><br>
-			Your Email *<br>
-			<input type="email" name="email" required><br><br>
-			Confirm Email Address *<br>
-			<input type="email" name="email" required><br><br>
-			Zip Code *<br>
-			<input type="text" name="zipcode" pattern="[0-9]{5}" title="Five digits zip code" required><br><br>
-			Phone Number *<br>
-			<input type="tel" name="tel" pattern="[0-9]*" title="Digits only"required><br><br><br>
-			Any programming experience? *<br>
-			<input type="radio" name="programming_experience" value="yes" required>Yes
-			<input type="radio" name="programming_experience" value="no" required>No<br><br>
-			<h3><u>Education</u></h3>
-			Highest Level of Education *<br>
-			<select name="education_level" required>
-				<option value="" selected disabled hidden>--select--</option>
-				<option value="grades" name="grades">Some high school (grades 9-12, no degree)</option>
-				<option value="graduate" name="graduate">High school graduate</option>
-				<option value="college" name="college">Some college (1-4 years, no degree)</option>
-				<option value="assotiate" name="assosiate">Associate's degree (including occupational or academic degress)</option>
-				<option value="bachelor" name="bachelor">Bechelor's degree</option>
-				<option value="master" name="master">Master's, professional, or doctorate degree</option>
-			</select>
-			<br><br>
-			<h3><u>About You</u></h3>
-			Why do you want to be an engineer? (2-4 sentences) *<br>
-			<textarea name="textarea" rows="4" cols="66" required></textarea>
-			<br><br>
-			<input type="submit" value="Submit">
+		<form method="POST">
+			<fieldset>				
+				<h3><u>Basic Info</u></h3>
+				First Name *<br>
+				<input type="text" name="firstname" required><br><br>
+				Last Name *<br>
+				<input type="text" name="lastname" required><br><br>
+				Your Email *<br>
+				<input type="email" name="email" required><br><br>
+				Confirm Email Address *<br>
+				<input type="email" name="email" required><br><br>
+				Zip Code *<br>
+				<input type="text" name="zipcode" pattern="[0-9]{5}" title="Five digits zip code" required><br><br>
+				Phone Number *<br>
+				<input type="tel" name="tel" pattern="[0-9]*" title="Digits only"required><br><br><br>
+				Any programming experience? *<br>
+				<input type="radio" name="programming_experience" value="yes" required>Yes
+				<input type="radio" name="programming_experience" value="no" required>No<br><br>
+				<h3><u>Education</u></h3>
+				Highest Level of Education *<br>
+				<select name="education_level" required>
+					<option value="" selected disabled hidden>--select--</option>
+					<option value="grades" name="grades">Some high school (grades 9-12, no degree)</option>
+					<option value="graduate" name="graduate">High school graduate</option>
+					<option value="college" name="college">Some college (1-4 years, no degree)</option>
+					<option value="assotiate" name="assosiate">Associate's degree (including occupational or academic degress)</option>
+					<option value="bachelor" name="bachelor">Bechelor's degree</option>
+					<option value="master" name="master">Master's, professional, or doctorate degree</option>
+				</select>
+				<br><br>
+				<h3><u>About You</u></h3>
+				Why do you want to be an engineer? (2-4 sentences) *<br>
+				<textarea name="textarea" rows="4" cols="66" required></textarea>
+				<br><br>
+				<input type="submit" value="Apply Now">
+			</fieldset>
 		</form>
 	</section>	
 	<footer>		
