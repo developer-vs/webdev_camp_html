@@ -16,49 +16,117 @@
 	<br>
 	<br>
 	<section>
-		<h1>Sign Up For a Class Today</h1>		
-		<form method="GET">
-			<fieldset>				
-				<h3><u>Basic Info</u></h3>
-				First Name *<br>
-				<input type="text" name="firstname" required><br><br>
-				Last Name *<br>
-				<input type="text" name="lastname" required><br><br>
-				Your Email *<br>
-				<input type="email" name="email" required><br><br>
-				Confirm Email Address *<br>
-				<input type="email" name="email" required><br><br>
-				Zip Code *<br>
-				<input type="text" name="zipcode" pattern="[0-9]{5}" title="Five digits zip code" required><br><br>
-				Phone Number *<br>
-				<input type="tel" name="tel" pattern="[0-9]*" title="Digits only"required><br><br><br>
-				Any programming experience? *<br>
-				<input type="radio" name="programming_experience" value="yes" required>Yes
-				<input type="radio" name="programming_experience" value="no" required>No<br><br>
-				<h3><u>Education</u></h3>
-				Highest Level of Education *<br>
-				<select name="education_level" required>
-					<option value="" selected disabled hidden>--select--</option>
-					<option value="grades" name="grades">Some high school (grades 9-12, no degree)</option>
-					<option value="graduate" name="graduate">High school graduate</option>
-					<option value="college" name="college">Some college (1-4 years, no degree)</option>
-					<option value="assotiate" name="assosiate">Associate's degree (including occupational or academic degress)</option>
-					<option value="bachelor" name="bachelor">Bechelor's degree</option>
-					<option value="master" name="master">Master's, professional, or doctorate degree</option>
-				</select>
-				<br><br>
-				<h3><u>About You</u></h3>
-				Why do you want to be an engineer? (2-4 sentences) *<br>
-				<textarea name="textarea" rows="4" cols="66" required></textarea>
-				<br><br>
-				<input type="submit" value="Apply Now">
-			</fieldset>
-		</form>
+		<h1>Sign Up For a Class Today</h1>	
+		<fieldset>	
+			<form>	
+				<div>
+					<h3><u>Basic Info</u></h3>
+				</div>				
+				
+				<div>
+					<label for="first-name">First Name *</label>
+					<br>
+					<input type="text" name="first-name" id="first-name" required>
+				</div>
+
+				<br>
+
+				<div>
+					<label for="last-name">Last Name *</label>
+					<br>
+					<input type="text" name="last-name" id="last-name" required>
+				</div>
+				
+				<br>
+
+				<div>
+					<label for="email">Your Email *</label>
+					<br>
+					<input type="email" name="email" id="email" required>
+				</div>
+
+				<br>
+				
+				<div>
+					<labe for="confirm-email">Confirm Email Address *</labe>
+					<br>
+					<input type="email" name="email" id="confirm-email" required>
+				</div>
+
+				<br>
+				
+				<div>
+					<label for="zip-code">Zip Code *</label>
+					<br>
+					<input type="text" name="zip-code" id="zip-code" pattern="[0-9]{5}" title="Zip Code must be 5 digits" required>
+				</div>
+
+				<br>
+
+				<div>
+					<label for="tel">Phone Number *</label>
+					<br>
+					<input type="tel" name="tel" id="tel" pattern="[0-9]*" title="Digits only" required>
+				</div>
+				
+				<br>
+				
+				<div>
+					<h3><u>Education</u></h3>
+					<label>Highest Level of Education *
+						<br>
+						<select name="education_level" required>
+							<option value="0" selected disabled hidden>--select--</option>
+							<option value="grades" name="grades">Some high school (grades 9-12, no degree)</option>
+							<option value="graduate" name="graduate">High school graduate</option>
+							<option value="college" name="college">Some college (1-4 years, no degree)</option>
+							<option value="assotiate" name="assosiate">Associate's degree (including occupational or academic degress)</option>
+							<option value="bachelor" name="bachelor">Bechelor's degree</option>
+							<option value="master" name="master">Master's, professional, or doctorate degree</option>
+						</select>
+					</label>
+				</div>	
+				
+				<br>
+
+				<div>
+					<h3><u>About You</u></h3>
+					<p>Any programming experience? *</p>
+					
+					<label for="programming-experience-yes">Yes</label>
+					<input type="radio" name="programming-experience" id="programming-experience-yes" value="yes" required>
+
+					<label for="programming-experience-no">No</label>
+					<input type="radio" name="programming-experience" id="programming-experience-no" value="no" required>
+				</div>
+				
+				<br>
+
+				<div>
+					<p>Why do you want to be an Developer? (2-4 sentences) *</p>
+					<textarea name="textarea" rows="4" cols="66" required></textarea>					
+				</div>	
+			
+				<br>				
+
+				<div>
+					<input type="submit" value="Apply Now">	
+				</div>			
+
+			</form>
+		</fieldset>
 	</section>
+
 	<footer>		
-		<br><br>
-		<p>Copyright © 2018 Web Dev Camp<br>
-		Contact information: <a href="malito:developer@example.com">developer@example.com</a></p>
+		<br>
+		<br>
+		<div>
+			<p>
+				Copyright © 2018 Web Dev Camp
+				<br>
+				Contact information: <a href="malito:developer@example.com">developer@example.com</a>
+			</p>
+		</div>
 	</footer>	
 </body>
 </html>
